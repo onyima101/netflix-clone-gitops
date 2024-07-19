@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Checkout from SCM') {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/onyima101/netflix-clone.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/onyima101/netflix-clone-gitops.git'
             }
         }
         stage("Update the Deployment Tags") {
